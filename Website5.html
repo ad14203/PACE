@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+        }
+
+        header {
+            background: #2d3436;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #dfe6e9;
+        }
+
+        nav {
+            background: #0984e3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #0984e3;
+            border-bottom: 2px solid #0984e3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adarsh Pradeep</h1>
+    <p>Student | Web Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate student learning web development.
+        I enjoy creating simple and clean websites using HTML and CSS.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">Python</div>
+        <div class="box">C Programming</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="box">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio using HTML & CSS.</p>
+        </div>
+        <div class="box">
+            <h3>College Website</h3>
+            <p>Homepage design for an institute.</p>
+        </div>
+        <div class="box">
+            <h3>Feedback Form</h3>
+            <p>Contact and feedback website.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: adarsh@example.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    <p>© 2026 Adarsh Pradeep | Portfolio</p>
+</footer>
+
+</body>
+</html>
