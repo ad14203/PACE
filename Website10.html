@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f2f6;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #2f3542;
+            position: fixed;
+            color: white;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            padding: 20px;
+            background: #1e272e;
+            margin: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background: #57606f;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .topbar {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #2f3542;
+        }
+
+        .card p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #1e90ff;
+        }
+
+        .table-section {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background: #f1f2f6;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            .main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Users</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</div>
+
+<div class="main">
+    <div class="topbar">
+        <h2>Admin Panel</h2>
+        <p>Welcome back, Admin</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Users</h3>
+            <p>1,245</p>
+        </div>
+        <div class="card">
+            <h3>Sales</h3>
+            <p>₹78,900</p>
+        </div>
+        <div class="card">
+            <h3>Orders</h3>
+            <p>320</p>
+        </div>
+        <div class="card">
+            <h3>Feedback</h3>
+            <p>89</p>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <h3>Recent Users</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Ravi Kumar</td>
+                <td>ravi@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Anjali Sharma</td>
+                <td>anjali@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Arun Das</td>
+                <td>arun@gmail.com</td>
+                <td>Inactive</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
